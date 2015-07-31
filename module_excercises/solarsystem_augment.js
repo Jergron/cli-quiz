@@ -1,26 +1,38 @@
 
-var SolarSystem = (function(solar) {
-  var star = ["Centauri", "Rigil Kentaurus", "Barnard's Star","Wolf 359","Luyten 726-8A"];
-  var age = "4.6 billion years";
-  var dwarfPlanets = [ "Ceres", "Pluto", "Eris", "Makemake", "Haumea"];
-   
-    solar.getStar = function() {
-      return star;
-    };
-     solar.getAge = function() {
-      return age;
-     };
-    solar.setAge = function(newAge) {
-      age = newAge;
-    };
-    solar.getDwarfPlanets = function() {
-      return dwarfPlanets;
-    };
-    solar.setDwarfPlanets = function(newDwarfPlanets) {
-      dwarfPlanets = newDwarfPlanets;
-    };
-    return solar
-})(SolarSystem);
+var SolarSystem = (function() {
+  var planets = ["Ceres", "Pluto", "Eris", "Makemake", "Haumea"];
+  var landedOn = 4;
+  var spaceCraft = [];
 
-SolarSystem.add
-console.log(SolarSystem);
+  return {
+    getplanets: function() {
+      return planets;
+    },
+    getLandedOn: function() {
+      return landedOn;
+    },
+    setLandedOn: function(newLandedOn) {
+      landedOn= newLandedOn;
+    },
+    modified_date: new Date(),
+    getSpacecraft: function() {
+     return age;
+    },
+    setSpaceCraft: function(newSpaceCraft) {
+      spaceCraft.push(newSpaceCraft);
+    }
+    
+  };
+})();
+SolarSystem.setSpaceCraft("Voyager 1")
+SolarSystem.setSpaceCraft("Voyager 2")
+SolarSystem.setSpaceCraft("Ulysses")
+SolarSystem.setSpaceCraft("Wind") 
+SolarSystem.setSpaceCraft("Cassini") 
+SolarSystem.setSpaceCraft("Stardust")
+
+
+
+
+
+
