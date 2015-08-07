@@ -1,18 +1,11 @@
-define(function myData(a, b) {
-  var songs = [];
-
+define(["jquery"],function($) {
   return {
-    querySongs: function (){
-        $.ajax({
-          url:"/data/list.json",
-          // async: false
-        }).done(function(data) {
-          songs = data.songs;
-          myData.call(this, songs);
+    querySongs: function (callback){
+      $.ajax({
+        url:"https://blazing-heat-6599.firebaseio.com/.json"
+      }).done(function (data) {
+        callback.call(this, data);
       });
-    },
-    setSongs: function () {
-      return songs;
     }
   };
 });

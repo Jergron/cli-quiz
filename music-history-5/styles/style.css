@@ -1,0 +1,39 @@
+body {
+  font: 100% "Lucida Calligraphy", Helvetica, sans-serif;
+  color: #333;
+  min-height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center; }
+  body li {
+    list-style: none outside none; }
+
+#box {
+  border-bottom: 4px solid teal; }
+
+.content {
+  overflow: hidden; }
+
+#sidebar p {
+  color: teal; }
+
+#filter {
+  border: 2px solid black;
+  font-family: Arial;
+  font-size: 18px; }
+
+#navbar {
+  border-bottom: 4px solid teal;
+  background-color: tomato; }
+
+#main {
+  overflow: scroll; }
+  #main p {
+    color: teal; }
+  #main #songTitle {
+    color: brown;
+    opacity: 0.6;
+    line-height: 50%; }
+
+/*# sourceMappingURL=style.css.map */

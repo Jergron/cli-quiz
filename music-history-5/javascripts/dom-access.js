@@ -1,4 +1,4 @@
-define(function() {
-  var $outputMain = $("#main2");
+define(["jquery"],function($) {
+  var $outputMain = $("#mainButton");
   return $outputMain;
-});
+}); 

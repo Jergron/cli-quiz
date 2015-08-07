@@ -1,18 +1,11 @@
-define(function myData() {
-  var songs = [];
-
+define(["jquery"],function($) {
   return {
-    querySongs: function (){
-        $.ajax({
-          url:"/data/list2.json",
-          // async: false
-        }).done(function(data) {
-          songs = data.songs;
-          myData.call(this, songs);
+    querySongs: function (callback){
+      $.ajax({
+        url:"/data/list2.json",
+      }).done(function (data) {
+        callback.call(this, data);
       });
-    },
-    setSongs: function () {
-      return songs;
     }
   };
 });
