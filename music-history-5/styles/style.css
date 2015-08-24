@@ -1,22 +1,37 @@
 body {
   font: 100% "Lucida Calligraphy", Helvetica, sans-serif;
   color: #333;
+  background-image: url("http://en.mallofsofia.bg/uploads/story/29/thumbs/back_background.jpg");
   min-height: 100%;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center center; }
   body li {
+    color: white;
     list-style: none outside none; }
-
-#box {
-  border-bottom: 4px solid teal; }
 
 .content {
   overflow: hidden; }
 
 #sidebar p {
-  color: teal; }
+  color: white; }
+
+.submitArtist {
+  background-color: none;
+  border: none; }
+
+.songInfo {
+  border-radius: 5em;
+  padding: 10px;
+  margin-top: 10px;
+  width: 40em;
+  text-align: center;
+  letter-spacing: 3px; }
+  .songInfo h3 {
+    color: white; }
+  .songInfo small {
+    color: white; }
 
 #filter {
   border: 2px solid black;
@@ -24,16 +39,28 @@ body {
   font-size: 18px; }
 
 #navbar {
-  border-bottom: 4px solid teal;
-  background-color: tomato; }
+  border: none;
+  border-bottom: 1px solid whitesmoke;
+  background-color: transparent;
+  padding: 2em; }
+  #navbar li a {
+    color: white; }
 
 #main {
   overflow: scroll; }
   #main p {
-    color: teal; }
+    color: burlywood; }
   #main #songTitle {
-    color: brown;
+    color: burlywood;
     opacity: 0.6;
     line-height: 50%; }
+
+.glyphicon-trash {
+  color: crimson;
+  background-color: transparent; }
+
+.glyphicon-trash:hover {
+  font-size: 16px;
+  cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */
